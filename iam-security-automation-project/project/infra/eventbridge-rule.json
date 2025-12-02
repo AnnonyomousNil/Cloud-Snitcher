@@ -1,0 +1,5 @@
+{
+  "Name": "IAMSecurityScanRule",
+  "ScheduleExpression": "rate(15 minutes)",
+  "State": "ENABLED"
+}
