@@ -21,10 +21,10 @@ Cloud-Security_lab/
 │       │   ├── lambda-role-policy.json
 │       │   ├── cloudtrail-setup.md
 │       │   └── eventbridge-rule.json
-│       ├── samples/
-│       │   ├── sample_root_signin.json
-│       │   └── sample_failed_login.json
-│       └── .gitignore
+│       └── samples/
+│           ├── sample_root_signin.json
+│           └── sample_failed_login.json
+│       
 ├── README.md                       # Repo-level README (short overview & quick links)
 └── LICENSE
 ```
