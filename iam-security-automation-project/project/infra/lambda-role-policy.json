@@ -1,0 +1,38 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3ReadForCloudTrail",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::YOUR-S3-BUCKET-NAME",
+        "arn:aws:s3:::YOUR-S3-BUCKET-NAME/*"
+      ]
+    },
+    {
+      "Sid": "PublishToSNS",
+      "Effect": "Allow",
+      "Action": [
+        "sns:Publish"
+      ],
+      "Resource": "arn:aws:sns:YOUR-REGION:YOUR-ACCOUNT-ID:YOUR-SNS-TOPIC"
+    },
+    {
+      "Sid": "ReadIAMMetadata",
+      "Effect": "Allow",
+      "Action": [
+        "iam:ListAccessKeys",
+        "iam:GetUser",
+        "iam:ListUsers",
+        "iam:ListAttachedUserPolicies",
+        "iam:GetLoginProfile"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsWrite",
+      "Effect": "Allow",
