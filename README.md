@@ -1,18 +1,19 @@
-# Cloud-Security_lab
+# Cloud Snitcher
 
 
-## CONTENTS
-- Cloud_Security_Lab_File
-- iam-security-automation project
+This project implements a lightweight IAM security monitoring and alerting system using AWS free-tier services. It analyzes CloudTrail management logs stored in Amazon S3 to detect risky identity-related activities such as root console sign-ins, multiple failed login attempts, and outdated IAM access keys.
 
+A scheduled AWS Lambda function processes recent CloudTrail logs, identifies suspicious behavior, and sends real-time alerts via Amazon SNS. The solution demonstrates how security automation and identity monitoring can be achieved without paid services like GuardDuty, making it ideal for learning, labs, and portfolio use.
+
+---
 
 ## Top-level repository structure 
 ```
 
-Cloud-Security_lab/
-├── iam-security-automation-project/
+Cloud-Snitcher/
+├── cloud-snitcher/
 │   ├── screenshots/                    # All AWS screenshots of this project
-│   └── project/                        # <- All project content lives here (matches Cloud-Security_lab style)
+│   └── app/                        # <- All project content lives here (matches Cloud-Security_lab style)
 │       ├── README.md                   # Project-specific README (detailed instructions)
 │       ├── lambda/
 │       │   ├── iam_detector.py         # Main Lambda detection script
