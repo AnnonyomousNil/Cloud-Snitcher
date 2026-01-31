@@ -43,9 +43,4 @@ Cloud-Security_lab/
 - `iam-security-automation-project/screenshots` - All AWS screenshots that I tested in.
 
 
----
 
-### Made by
-- Sankarshan Kshtriya & Rohan Singh 
-- B.Tech CSE (Cyber Security) [Vth Sem]
-- 2301410027 & 2301410032
