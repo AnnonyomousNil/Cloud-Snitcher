@@ -11,7 +11,7 @@ A scheduled AWS Lambda function processes recent CloudTrail logs, identifies sus
 ```
 
 Cloud-Snitcher/
-├── iam-security-automation-project//
+├── iam-security-automation-project/
 │   ├── screenshots/                    # All AWS screenshots of this project
 │   └── project/                        # <- All project content lives here (matches Cloud-Security_lab style)
 │       ├── README.md                   # Project-specific README (detailed instructions)
